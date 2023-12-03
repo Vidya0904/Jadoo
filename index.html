@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadoo</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Start  -->
+    <header>
+      <div class="header_wrapper">
+        <div class="container">
+          <div class="header_wrapper_inner">
+            <img src="./images/logo.png" alt="logo" />
+
+            <i
+              class="bi bi-list menu_icon"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop"
+            ></i>
+
+            <ul class="header_menu">
+              <li class="dropdown">
+                <a href="#">
+                  Destinations
+                  <!--SVG dropdown icon-->
+                  <svg
+                    class="icon"
+                    width="14"
+                    height="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                    style="fill: #fff"
+                  >
+                    <path
+                      d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
+                    />
+                  </svg>
+                </a>
+                <!--Start of Dropdown-->
+                <ul class="dropdown-nav">
+                  <li><a href="">Pune</a></li>
+                  <li><a href="">Mumbai</a></li>
+                  <li><a href="">Ahemdabad</a></li>
+                  <li><a href="">Delhi</a></li>
+                  <li><a href="">See More..</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Hotels</a>
+              </li>
+              <li>
+                <a href="#">Flights</a>
+              </li>
+              <li>
+                <a href="#">Login</a>
+              </li>
+              <li>
+                <button class="sign_up_btn">Sign Up</button>
+              </li>
+              <li>
+                <select class="form_select">
+                  <option>EN</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Header -->
+
+    <div
+      class="offcanvas offcanvas-top"
+      tabindex="-1"
+      id="offcanvasTop"
+      aria-labelledby="offcanvasTopLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="mb_header_menu">
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Hatels</a></li>
+          <li><a href="#">Flights</a></li>
+          <li><a href="#">Login</a></li>
+          <li>
+            <button class="sign_up_btn">Sign Up</button>
+          </li>
+          <li>
+            <select class="form_select">
+              <option>EN</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Slider Start -->
+    <section class="slider_section">
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-12 col-sm-12">
+            <div class="slider_content_wrapper">
+              <div>
+                <h4>Best Destinations around the world</h4>
+                <h1>Travel, enjoy and live a new and full life</h1>
+                <p class="mb-4">
+                  Built Wicket longer admire do barton vanity itself do in it.
+                  <br />
+                  Preferred to sportsmen it engrossed listening. Park gate
+                  <br />
+                  sell they west hard for the.
+                </p>
+              </div>
+              <div class="slider_btn_play">
+                <button class="find_out_more_btn">Find out more</button>
+                <div class="slider_play">
+                  <i class="bi bi-caret-right-fill"></i>
+                </div>
+                <p class="mb-0 ms-3">Play Demo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="slider_img_wrapper">
+              <img src="./images/slider_img.png" alt="slider_img" />
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <ul class="slides1">
+        <input type="radio" name="radio-buttons" id="img-1" checked />
+        <li class="slide-container1">
+          <div class="slide-image">
+            <div class="container">
+              <div class="row slider_reverse">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                  <div class="slider_content_wrapper">
+                    <div>
+                      <h4>Best Destinations around the world</h4>
+                      <h1>Travel, enjoy and live a new and full life</h1>
+                      <p class="mb-4">
+                        Built Wicket longer admire do barton vanity itself do in
+                        it.
+                        <br />
+                        Preferred to sportsmen it engrossed listening. Park gate
+                        <br />
+                        sell they west hard for the.
+                      </p>
+                    </div>
+                    <div class="slider_btn_play">
+                      <button class="find_out_more_btn">Find out more</button>
+                      <div class="slider_play">
+                        <i class="bi bi-caret-right-fill"></i>
+                      </div>
+                      <p class="mb-0 ms-3">Play Demo</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                  <div class="slider_img_wrapper">
+                    <img src="./images/slider_img.png" alt="slider_img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel1-controls">
+            <label for="img-3" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-2" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <input type="radio" name="radio-buttons" id="img-2" />
+        <li class="slide-container1">
+          <div class="slide-image">
+            <div class="container">
+              <div class="row slider_reverse">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                  <div class="slider_content_wrapper">
+                    <div>
+                      <h4>Best Destinations around the world</h4>
+                      <h1>Travel, enjoy and live a new and full life</h1>
+                      <p class="mb-4">
+                        Built Wicket longer admire do barton vanity itself do in
+                        it.
+                        <br />
+                        Preferred to sportsmen it engrossed listening. Park gate
+                        <br />
+                        sell they west hard for the.
+                      </p>
+                    </div>
+                    <div class="slider_btn_play">
+                      <button class="find_out_more_btn">Find out more</button>
+                      <div class="slider_play">
+                        <i class="bi bi-caret-right-fill"></i>
+                      </div>
+                      <p class="mb-0 ms-3">Play Demo</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                  <div class="slider_img_wrapper">
+                    <img src="./images/slider_img.png" alt="slider_img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel1-controls">
+            <label for="img-1" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-3" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <input type="radio" name="radio-buttons" id="img-3" />
+        <li class="slide-container1">
+          <div class="slide-image">
+            <div class="container">
+              <div class="row slider_reverse">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                  <div class="slider_content_wrapper">
+                    <div>
+                      <h4>Best Destinations around the world</h4>
+                      <h1>Travel, enjoy and live a new and full life</h1>
+                      <p class="mb-4">
+                        Built Wicket longer admire do barton vanity itself do in
+                        it.
+                        <br />
+                        Preferred to sportsmen it engrossed listening. Park gate
+                        <br />
+                        sell they west hard for the.
+                      </p>
+                    </div>
+                    <div class="slider_btn_play">
+                      <button class="find_out_more_btn">Find out more</button>
+                      <div class="d-flex">
+                        <div class="slider_play">
+                          <i class="bi bi-caret-right-fill"></i>
+                        </div>
+                        <p class="mb-0 ms-3">Play Demo</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                  <div class="slider_img_wrapper">
+                    <img src="./images/slider_img.png" alt="slider_img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel1-controls">
+            <label for="img-2" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-1" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <div class="carousel1-dots">
+          <label for="img-1" class="carousel1-dot" id="img-dot-1"></label>
+          <label for="img-2" class="carousel1-dot" id="img-dot-2"></label>
+          <label for="img-3" class="carousel1-dot" id="img-dot-3"></label>
+        </div>
+      </ul>
+    </section>
+    <!-- Slider End -->
+
+    <!-- Easy and Fast Start -->
+    <section class="ef_section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="ef_wrapper">
+              <h5>Easy and Fast</h5>
+              <h3>Book your next trip in 3 easy steps</h3>
+            </div>
+            <div class="ef_inner_content">
+              <div class="d-flex align-items-start mb-3">
+                <div class="ef_img_content_wrapper img1">
+                  <img
+                    src="./images/selection_designation.png"
+                    alt="selection_designation"
+                  />
+                </div>
+                <div>
+                  <h5>Choose Destination</h5>
+                  <p>
+                    Choose your favourite place. No matter <br />
+                    where you travel inside the World.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-3">
+                <div class="ef_img_content_wrapper img2">
+                  <img src="./images/make_payment.png" alt="make_payment" />
+                </div>
+                <div>
+                  <h5>Make Payment</h5>
+                  <p>
+                    After find your perfect spot, make your <br />
+                    payment and get ready to travel.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-3">
+                <div class="ef_img_content_wrapper img3">
+                  <img src="./images/reach_airport.png" alt=reach_airport" />
+                </div>
+                <div>
+                  <h5>Reach Airport on Selected Date</h5>
+                  <p>
+                    Lastly, you have to arrive at the airport <br />
+                    on time and enjoy the vacation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center"
+          >
+            <div class="ef_card shadow">
+              <div class="ef_bg_wrapper me-10 me-xxl-0">
+                <img src="./images/ef_bg.png" class="ef_bg_img" alt="shape" />
+              </div>
+              <div class="ef_card_body">
+                <img
+                  class="mb-4 mt-2 rounded-2 w-100"
+                  src="./images/easy_fast_img.jpg"
+                />
+                <div class="ef_right">
+                  <h5>Trip To Greece</h5>
+                  <p>14-29 June | by Robbin joseph</p>
+                  <div class="d-flex mb-4">
+                    <div class="ef_icon">
+                      <img src="./images/leaf.png" alt="leaf" />
+                    </div>
+                    <div class="ef_icon">
+                      <img src="./images/map.png" alt="map" />
+                    </div>
+                    <div class="ef_icon">
+                      <img src="./images/send.png" alt="send" />
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="me-3"
+                        src="./images/building.png"
+                        alt="building"
+                      />
+                      <p class="mb-0">24 people going</p>
+                    </div>
+                    <div class="position-relative">
+                      <img src="./images/heart.png" class="heart" alt="heart" />
+                      <div id="tripToRome" class="shadow">
+                        <div class="trip_card_body d-flex align-items-start">
+                          <img
+                            src="./images/trip_to_rome.png"
+                            alt="trip_to_rome"
+                          />
+                          <div>
+                            <p>Ongoing</p>
+                            <h5>Trip to rome</h5>
+                            <h6>40% completed</h6>
+                            <div class="progress" style="height: 6px"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Easy and Fast End -->
+
+    <!-- Testimonials Start -->
+    <section class="">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="ef_wrapper">
+              <h5>TESTIMONIALS</h5>
+              <h3>What People Say About Us.</h3>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+          <div
+            class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center"
+          >
+            <div class="container testimonials_container">
+              <div class="slide-container">
+                <div class="slide" pos="1">
+                  <div class="pe-7 ps-5 ps-lg-0">
+                    <div class="carousel">
+                      <img
+                        src="./images/author.png"
+                        alt="author"
+                        class="author"
+                      />
+                      <div class="carousel_card p-4 shadow">
+                        <p class="mb-4">
+                          "On the Windows talking painted pasture yet its
+                          express parties use. Sure last upon he same as knew
+                          next. Of believed or diverted no."
+                        </p>
+                        <h5>Mike Taylor</h5>
+                        <p>Lahore, Pakistan</p>
+                      </div>
+                      <div
+                        class="card shadow-sm position-absolute top-0 z-index--1 mb-3 w-100 h-100"
+                        style="
+                          border-radius: 10px;
+                          transform: translate(25px, 25px);
+                          border: none;
+                          z-index: -1;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide" pos="2" style="opacity: 0">
+                  <div class="pe-7 ps-5 ps-lg-0">
+                    <div class="carousel">
+                      <img
+                        src="./images/author.png"
+                        alt="author"
+                        class="author"
+                      />
+                      <div class="carousel_card p-4 shadow">
+                        <p class="mb-4">
+                          "On the Windows talking painted pasture yet its
+                          express parties use. Sure last upon he same as knew
+                          next. Of believed or diverted no."
+                        </p>
+                        <h5>Mike Taylor</h5>
+                        <p>Lahore, Pakistan</p>
+                      </div>
+                      <div
+                        class="card shadow-sm position-absolute top-0 z-index--1 mb-3 w-100 h-100"
+                        style="
+                          border-radius: 10px;
+                          transform: translate(25px, 25px);
+                          border: none;
+                          z-index: -1;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide" pos="3" style="opacity: 0">
+                  <div class="pe-7 ps-5 ps-lg-0">
+                    <div class="carousel">
+                      <img
+                        src="./images/author.png"
+                        alt="author"
+                        class="author"
+                      />
+                      <div class="carousel_card p-4 shadow">
+                        <p class="mb-4">
+                          "On the Windows talking painted pasture yet its
+                          express parties use. Sure last upon he same as knew
+                          next. Of believed or diverted no."
+                        </p>
+                        <h5>Mike Taylor</h5>
+                        <p>Lahore, Pakistan</p>
+                      </div>
+                      <div
+                        class="card shadow-sm position-absolute top-0 z-index--1 mb-3 w-100 h-100"
+                        style="
+                          border-radius: 10px;
+                          transform: translate(25px, 25px);
+                          border: none;
+                          z-index: -1;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-toggle-container">
+                <p class="slide-toggle" direction="prev">
+                  <img src="./images/up.png" alt="up" />
+                </p>
+                <p class="slide-toggle" direction="next">
+                  <img src="./images/down.png" alt="down" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-7 col-sm-12">
+            <img
+              class="mb-4"
+              src="./images/footer_logo.png"
+              width="150"
+              alt="jadoo"
+            />
+            <p class="footer_desc">
+              Book your trip in minute, get full Control for much longer.
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4">
+            <h4 class="mb-4">Company</h4>
+            <ul>
+              <li class="mb-2">
+                <a href="#">About</a>
+              </li>
+              <li class="mb-2">
+                <a href="#">Careers</a>
+              </li>
+              <li class="mb-2">
+                <a href="#">Mobile</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4">
+            <h4 class="mb-4">Contact</h4>
+            <ul>
+              <li class="mb-2">
+                <a href="#">Help/FAQ</a>
+              </li>
+              <li class="mb-2">
+                <a href="#">Press</a>
+              </li>
+              <li class="mb-2">
+                <a href="#">Affiliate</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4">
+            <h4 class="mb-4">More</h4>
+            <ul>
+              <li class="mb-2">
+                <a href="#">Airlinefees</a>
+              </li>
+              <li class="mb-2">
+                <a href="#">Airline</a>
+              </li>
+              <li class="mb-2">
+                <a href="#">Low fare tips</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-12">
+            <div class="d-flex mb-4">
+              <a href="#" class="footer_fb">
+                <svg
+                  class="svg-inline--fa fa-facebook-f fa-w-10"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="facebook-f"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="ms-4">
+                <div class="instagram">
+                  <i class="bi bi-instagram"></i>
+                </div>
+              </a>
+            </div>
+
+            <p class="footer_disc">Discover our app</p>
+            <div class="d-flex">
+              <a href="#" class="me-2">
+                <img src="./images/play-store.png" alt="play-store"
+              /></a>
+              <a href="#">
+                <img src="./images/apple-store.png" alt="apple-store"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let activeSlide = 1;
+        let slideCount = 3;
+        let speed = 250;
+
+        // Hide all slides that aren't the starting active slide
+        document
+          .querySelectorAll(".slide:not([pos='" + activeSlide + "'])")
+          .forEach(function (slide) {
+            slide.style.display = "none";
+          });
+
+        document
+          .querySelector(".slide-toggle[direction='next']")
+          .addEventListener("click", function () {
+            document
+              .querySelectorAll(".slide:not([pos='" + activeSlide + "'])")
+              .forEach(function (slide) {
+                slide.style.top = "10px";
+              });
+
+            let nextSlide = activeSlide + 1;
+
+            if (nextSlide <= slideCount) {
+              animateSlideOut(activeSlide);
+              setTimeout(function () {
+                animateSlideIn(nextSlide);
+              }, speed);
+            } else {
+              nextSlide = 1;
+              animateSlideOut(activeSlide);
+              setTimeout(function () {
+                animateSlideIn(nextSlide);
+              }, speed);
+            }
+
+            activeSlide = nextSlide;
+          });
+
+        document
+          .querySelector(".slide-toggle[direction='prev']")
+          .addEventListener("click", function () {
+            document
+              .querySelectorAll(".slide:not([pos='" + activeSlide + "'])")
+              .forEach(function (slide) {
+                slide.style.top = "-10px";
+              });
+
+            let nextSlide = activeSlide - 1;
+
+            if (nextSlide < 1) {
+              nextSlide = slideCount;
+              animateSlideOut(activeSlide);
+              setTimeout(function () {
+                animateSlideIn(nextSlide);
+              }, speed);
+            } else {
+              animateSlideOut(activeSlide);
+              setTimeout(function () {
+                animateSlideIn(nextSlide);
+              }, speed);
+            }
+
+            activeSlide = nextSlide;
+          });
+
+        function animateSlideOut(slideNumber) {
+          let currentSlide = document.querySelector(
+            ".slide[pos='" + slideNumber + "']"
+          );
+          currentSlide.style.transition =
+            "opacity " + speed + "ms, top " + speed + "ms";
+          currentSlide.style.opacity = 0;
+          currentSlide.style.top = "10px";
+          setTimeout(function () {
+            currentSlide.style.display = "none";
+          }, speed);
+        }
+
+        function animateSlideIn(slideNumber) {
+          let nextSlide = document.querySelector(
+            ".slide[pos='" + slideNumber + "']"
+          );
+          nextSlide.style.display = "block";
+          nextSlide.style.transition =
+            "opacity " + speed + "ms, top " + speed + "ms";
+          nextSlide.style.opacity = 1;
+          nextSlide.style.top = "0px";
+        }
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
